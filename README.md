@@ -13,3 +13,4 @@ A javascript personal project to praticise my HTML CSS and JavaScript knowledge 
   - The Full value
   - The fatorated value
   
+| <b>The main objective was learn more and praticise CSS designing and JS.</b>
