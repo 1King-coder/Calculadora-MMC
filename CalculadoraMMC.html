@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Mínimo Múltiplo Comum</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        table {
+            margin: 0px 0px 0px 8%;
+            height: 50px;
+            width: 40vh;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body class="bg">
+    <section class="MMC">
+        <div class="titulo">
+            <h2>Calculadora de MMC</h2>
+        </div>
+
+        <div class="numeros">
+            <input type="number" title="Insira um número" class="mmc-num">
+            <input type="number" title="Insira um número" class="mmc-num">
+            <input type="number" title="Insira um número" class="mmc-num">
+            <input type="number" title="Insira um número" class="mmc-num">
+            <input type="number" title="Insira um número" class="mmc-num">
+            <input type="number" title="Insira um número" class="mmc-num">
+        </div>
+
+        <p>
+            <label for="valor-completo">Valor completo</label>
+            <input type="radio" id="valor-completo">
+            <label for="valores-com-expoentes">Valores com expoentes</label>
+            <input type="radio" id="valores-com-expoentes">
+        </p>
+
+        <div class="efetuar-btn">
+            <button class="efetuar">Efetuar</button>
+        </div>
+
+        <div class="titulo-2">
+            <h3 class="titulo-resultados">Resultados:</h3>
+        </div>
+
+        <div class="resultados">
+            <h4 class="titulo-resultados black"></h4>
+        </div>
+
+        <script>
+            document.addEventListener('click', e => {
+                const valorComp = document.getElementById('valor-completo');
+                const valoresComExp = document.getElementById('valores-com-expoentes');
+                
+                if (e.target === valorComp) valoresComExp.checked = false;
+                if (e.target === valoresComExp) valorComp.checked = false;
+            });
+        </script>
+        <script src="assets/js/MMC.js"></script>
+    </section>
+</body>
+
+</html>

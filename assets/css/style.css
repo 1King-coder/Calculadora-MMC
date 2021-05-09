@@ -1,0 +1,179 @@
+body, html {
+    height: 100vh;
+}
+
+body {
+    margin: 10vh;
+    display: grid;
+    place-content: center;
+    height: 70vh;
+    background-image: linear-gradient(to bottom right, rgb(245, 255, 111), rgba(2, 250, 217, 0.692));
+}
+
+.titulo {
+    transition: all ease-in-out 1000ms;
+    border-radius: 60px;
+    background-image: linear-gradient(to right, rgba(229, 255, 81, 0.705), rgba(163, 254, 171, 0.993));
+    background-color: unset;
+    margin: 0px 120px 0px 120px;
+}
+
+
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+.titulo-2 {
+    display: block;
+    transition: all ease-in-out 1000ms;
+    border-radius: 60px;
+    background-image: linear-gradient(to right, rgba(229, 255, 81, 0.705), rgba(163, 254, 171, 0.993));    margin: 0px 24em 0px 30px;
+}
+
+.titulo-resultados {
+    padding: 10px;
+    margin: 30px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+h3::before {
+    content: '_';
+    background-image: linear-gradient(to right, rgba(238, 255, 4, 0.698), rgba(2, 250, 250, 0.609));
+    position: absolute;
+    color: transparent;
+    font-size: 4px;
+    border-radius: 100px;
+    transform: translatey(350%);
+    padding: 0px 28px 4px 45px;
+}
+
+h2::after {
+    content: '_';
+    background-image: linear-gradient(to right, rgba(238, 255, 4, 0.698), rgba(2, 250, 250, 0.609));
+    position: absolute;
+    color: transparent;
+    font-size: 4px;
+    border-radius: 100px;
+    transform: translateX(-95%);
+    padding: 0px 28px;
+}
+
+.black {
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.MMC {
+    margin-top: 20%;
+    transition: all ease-in-out 1000ms;
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius: 20px;
+    max-width: 640px;
+    place-content: center;
+    align-content: center;
+}
+.numeros {
+    transition: all ease-in-out 1000ms;
+    position: relative;
+    display: block;
+    align-items: center;
+    margin: auto 42px;
+    place-content: center;
+}
+
+
+.numeros input {
+    position: relative;
+    margin: 10px;
+    padding: 3px;
+    border-color: rgb(142, 248, 213);
+    border-width: 1px;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.numeros input:focus {
+    transition: all ease-in-out 300ms;
+    outline-width: 1px;
+    outline-color: rgb(109, 245, 200);
+}
+
+
+label {
+    transition: all ease-in-out 1000ms;
+    background: linear-gradient(to right, rgb(255, 251, 11), rgba(61, 153, 138, 0.877));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: oblique;
+    margin: 0px 0px 0px 110px;
+}
+
+
+
+.efetuar-btn {
+    display: grid;
+    align-items: center;
+    margin: 0px 175px;
+    padding: 20px 50px;
+    position: relative;
+    place-content: center;
+}
+
+.efetuar {
+    border-width: 1px;
+    border-radius: 80px;
+    background-image: linear-gradient(to bottom right, rgba(229, 255, 81, 0.705), rgba(2, 250, 155, 0.623));
+    padding: 10px 100px;
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+
+
+
+.efetuar:hover {
+    font-style: oblique;
+    cursor: pointer;
+    background-image: linear-gradient(to top left, rgba(229, 255, 81, 0.705), rgba(2, 250, 155, 0.623));
+}
+
+.efetuar:focus, .efetuar::after {
+    font-style: oblique;
+    outline: none;
+    color: rgb(223, 223, 223);
+    background-image: linear-gradient(to top left, rgba(170, 189, 63, 0.705), rgba(0, 177, 109, 0.623));
+}
+
+.resultados {
+    transition: all ease-in-out 1000ms;
+    position: relative;
+    place-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px 30px 20px 30px;
+    padding: 0.5em;
+    background-color: rgb(255, 255, 255);
+}
